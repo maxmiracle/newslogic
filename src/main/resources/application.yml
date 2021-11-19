@@ -2,3 +2,18 @@ spring:
     data:
         mongodb:
             uri: ${newscharturi}
+management:
+    endpoints:
+        web:
+            exposure:
+                include: loggers,health,prometheus,logfile
+    metrics:
+        export:
+            prometheus:
+                enabled: true
+        distribution:
+            percentiles-histogram:
+                "[http.server.requests]": true
+logging:
+    file:
+        name: logfile.log

@@ -3,9 +3,11 @@ package org.maxvas.newslogic.rest;
 import lombok.AllArgsConstructor;
 import org.maxvas.newslogic.repository.ArticleRepository;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/analitics")
 @AllArgsConstructor
 public class AnalyticsController {
 
