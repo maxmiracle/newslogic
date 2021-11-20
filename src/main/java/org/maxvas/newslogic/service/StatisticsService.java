@@ -58,7 +58,7 @@ public class StatisticsService {
         } else {
             factor = new Factor();
             factor.setArticleId(article.get_id());
-            factor.setDate(LocalDate.now());
+            factor.setDate(article.getDate());
             factor.setLink(article.getLink());
             factor.setStats(Map.of(statisticsId, stat));
         }
