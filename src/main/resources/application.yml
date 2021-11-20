@@ -7,6 +7,12 @@ management:
         web:
             exposure:
                 include: loggers,health,prometheus,logfile
+    endpoint:
+        health:
+            show-details: always
+    health:
+        defaults:
+            enabled: true
     metrics:
         export:
             prometheus:
