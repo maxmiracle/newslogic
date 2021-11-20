@@ -6,7 +6,7 @@ management:
     endpoints:
         web:
             exposure:
-                include: loggers,health,prometheus,logfile
+                include: loggers,health,metrics,prometheus,logfile
     endpoint:
         health:
             show-details: always
